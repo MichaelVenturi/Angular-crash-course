@@ -1,0 +1,44 @@
+ANGULAR
+-application design framework
+-frontend framework with JS, makes efficient single page apps
+
+-Used to create single page apps that run on the client
+-can be used to create full stack apps by making
+HTTP requests to backend server
+-Angular can run on the server side with something
+like Angular Universal
+
+This is Angular 2, completely rewritten from 1
+
+Why Angular:
+-dynamic frontend apps and UIs 
+-more full featured than react, so tougher and larger
+-uses typescript by default
+-RxJS library, lets use of observables
+
+Component driven 
+ex:
+@Component({
+    selector: 'app-hero-list',
+    templateUrl: './hero-list.component.html',
+    providers: [HeroService]
+})
+export class HeroListComponent implements OnInit{ /*...*/ }
+
+Angular distinguishes components from services
+this increases modularity and reusability
+
+by separating a components view related functionality
+from other kinds of processing, you can make your component
+classes lean and efficient
+
+a component can delegate certain tasks to services, such as fetching
+data from the server, validating user input, or logging directly
+to the console
+
+Angular CLI:
+  npm install -g @angular/cli
+  ng new my-app 
+
+commands available to generate components/services
+

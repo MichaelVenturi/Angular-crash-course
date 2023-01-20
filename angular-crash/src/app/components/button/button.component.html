@@ -1,0 +1,9 @@
+<!-- ngStyle is a directive for inline styling: tricky syntax here -->
+<!-- click is an event: directive = [] event = ()  -->
+<button
+  [ngStyle]="{ 'background-color': color }"
+  class="btn"
+  (click)="onClick()"
+>
+  {{ text }}
+</button>
